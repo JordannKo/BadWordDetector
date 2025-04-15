@@ -133,3 +133,6 @@ xcuserdata
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
+
+### files ###
+SwearDetector/SwearDetector/BadWordList.swift
