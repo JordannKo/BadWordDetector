@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  SwearDetector
+
+  Created by JordannKo on 4/15/25.
+  
+*/
+
+"NSMicrophoneUsageDescription" = "इस ऐप को वॉयस इनपुट के लिए माइक्रोफ़ोन एक्सेस की आवश्यकता है।";
+"NSSpeechRecognitionUsageDescription" = "इस ऐप को वॉयस इनपुट के लिए माइक्रोफ़ोन एक्सेस की आवश्यकता है।";

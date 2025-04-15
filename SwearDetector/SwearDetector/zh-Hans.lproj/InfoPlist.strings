@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  SwearDetector
+
+  Created by JordannKo on 4/15/25.
+  
+*/
+
+"NSMicrophoneUsageDescription" = "此应用需要麦克风权限以进行语音输入。";
+"NSSpeechRecognitionUsageDescription" = "此应用需要麦克风权限以进行语音输入。";

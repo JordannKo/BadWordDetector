@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  SwearDetector
+
+  Created by JordannKo on 4/15/25.
+  
+*/
+
+"NSMicrophoneUsageDescription" = "Ứng dụng này cần quyền truy cập micrô để nhập giọng nói.";
+"NSSpeechRecognitionUsageDescription" = "Ứng dụng này cần quyền truy cập micrô để nhập giọng nói.";

@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  SwearDetector
+
+  Created by JordannKo on 4/15/25.
+  
+*/
+
+"NSMicrophoneUsageDescription" = "Az alkalmazásnak mikrofon-hozzáférésre van szüksége a hangbevitelhez.";
+"NSSpeechRecognitionUsageDescription" = "Az alkalmazásnak mikrofon-hozzáférésre van szüksége a hangbevitelhez.";

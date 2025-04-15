@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  SwearDetector
+
+  Created by JordannKo on 4/15/25.
+  
+*/
+
+"NSMicrophoneUsageDescription" = "Această aplicație are nevoie de acces la microfon pentru a detecta intrarea vocală.";
+"NSSpeechRecognitionUsageDescription" = "Această aplicație are nevoie de acces la microfon pentru a detecta intrarea vocală.";

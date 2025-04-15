@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  SwearDetector
+
+  Created by JordannKo on 4/15/25.
+  
+*/
+
+"NSMicrophoneUsageDescription" = "יישום זה דורש גישה למיקרופון להזנת קול.";
+"NSSpeechRecognitionUsageDescription" = "יישום זה דורש גישה למיקרופון להזנת קול.";

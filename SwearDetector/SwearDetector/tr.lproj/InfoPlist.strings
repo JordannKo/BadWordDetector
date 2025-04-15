@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  SwearDetector
+
+  Created by JordannKo on 4/15/25.
+  
+*/
+
+"NSMicrophoneUsageDescription" = "Bu uygulamanın sesli giriş için mikrofona erişimi gerekiyor.";
+"NSSpeechRecognitionUsageDescription" = "Bu uygulamanın sesli giriş için mikrofona erişimi gerekiyor.";

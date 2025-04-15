@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  SwearDetector
+
+  Created by JordannKo on 4/15/25.
+  
+*/
+
+"NSMicrophoneUsageDescription" = "此應用程式需要使用咪高峰以進行語音輸入。";
+"NSSpeechRecognitionUsageDescription" = "此應用程式需要使用咪高峰以進行語音輸入。";
