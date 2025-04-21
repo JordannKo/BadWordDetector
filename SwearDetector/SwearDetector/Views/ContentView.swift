@@ -9,8 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
   @State var isRecording: Bool = false
+  @State var showPrivacyPolicy: Bool = false
+  @State var showTermsOfService: Bool = false
   @StateObject var detectManager: VoiceDetectManager = .init()
-  @State private var selectedLanguage: Language = Language.getDeviceLocale()
+  @State private var selectedLanguage: Language = .english
   
   var body: some View {
     ZStack {
@@ -44,7 +46,27 @@ struct ContentView: View {
               .foregroundColor(.white)
               .padding()
           }
+          
           Spacer()
+          
+          Menu {
+            Button {
+              showPrivacyPolicy = true
+            } label: {
+              Text("개인정보처리방침")
+            }
+            Button {
+              showTermsOfService = true
+            } label: {
+              Text("이용약관")
+            }
+          } label: {
+            Image(systemName: "ellipsis")
+              .font(.title2)
+              .foregroundColor(.white)
+              .padding()
+              .rotationEffect(.degrees(90))
+          }
         }
         Spacer()
       }
@@ -58,7 +80,7 @@ struct ContentView: View {
               .font(.system(size: 40))
               .foregroundColor(.white.opacity(0.9))
             
-            Text(isRecording ? "Stop Listening" : "Start Listening")
+            Text(isRecording ? "탭하여 중지" : "탭하여 시작")
               .foregroundStyle(.white)
               .padding(.top, 10)
           }
@@ -80,11 +102,25 @@ struct ContentView: View {
         }
       
         if isRecording {
-          Text(!detectManager.isDetected ? "Listening..." : "BAD")
-            .font(.headline)
-            .foregroundStyle(.white)
-            .offset(y: -200)
+          if detectManager.isDetected {
+            Image(systemName: "exclamationmark.circle")
+              .resizable()
+              .offset(y: -200)
+              .frame(width: 50, height: 50)
+              .foregroundStyle(.white)
+          } else {
+            Text("음성 인식 중...")
+              .font(.system(size: detectManager.isDetected ? 30 : 20))
+              .foregroundStyle(.white)
+              .offset(y: -200)
+          }
         }
+    }
+    .sheet(isPresented: $showPrivacyPolicy) {
+      AppPolicyView(appPolicy: .privacyPolicy)
+    }
+    .sheet(isPresented: $showTermsOfService) {
+      AppPolicyView(appPolicy: .termsOfService)
     }
   }
 }

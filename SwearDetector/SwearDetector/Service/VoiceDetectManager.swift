@@ -29,7 +29,6 @@ class VoiceDetectManager: NSObject, ObservableObject, SFSpeechRecognizerDelegate
       return
     }
     
-    
     request = SFSpeechAudioBufferRecognitionRequest()
     guard let recognitionRequest = request else {
       fatalError("Can't create request")

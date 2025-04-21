@@ -135,4 +135,4 @@ xcuserdata
 **/xcshareddata/WorkspaceSettings.xcsettings
 
 ### files ###
-SwearDetector/SwearDetector/BadWordList.swift
+SwearDetector/SwearDetector/Constants/

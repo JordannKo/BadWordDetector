@@ -77,7 +77,7 @@ extension Language {
 
 extension Language {
   static func getDeviceLocale() -> Language {
-    let preferredLanguages = Locale.preferredLanguages // 가장 신뢰도 높음
+    let preferredLanguages = Locale.preferredLanguages
     let primary = preferredLanguages.first ?? "en"
 
     if primary.hasPrefix("ko") {
